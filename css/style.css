@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-size: 15px;
+}
+
+div.card{
+    border: 1px solid;
+    margin: 0 auto;
+    width: 90%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title{
+    
+}
+img{
+    width: 50px;
+}
+
+button{
+    width: fit-content;
+}
+
+
+/* @media screen and (min-width:575px) {
+    main{
+        display: flex;
+    }
+} */
