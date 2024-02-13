@@ -7,10 +7,15 @@
 body{
     height: 100vh;
     font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main{
+    padding: 50px 0;
 }
 
 div.card{
-    border: 1px solid;
     margin: 0 auto;
     width: 90%;
     padding: 30px;
@@ -19,20 +24,106 @@ div.card{
     gap: 2rem;
 }
 
-.title{
-    
+.sedans{
+    background-color: hsl(31, 77%, 52%);
 }
-img{
-    width: 50px;
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.title{
+    order: 2;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.5rem;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 95%);
+}
+
+.kalimat{
+    order: 3;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+div img{
+    width: 70px;
+    order: 1;
 }
 
 button{
+    font-family: "Lexend Deca", sans-serif;
+    order: 4;
     width: fit-content;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
 }
 
+.sedan-button{
+    color: hsl(31, 77%, 52%);
+}
 
-/* @media screen and (min-width:575px) {
+.sedan-button:active{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.suv-button{
+    color: hsl(184, 100%, 22%);
+}
+
+.suv-button:active{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.luxury-button{
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury-button:active{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+main div.card:nth-child(1){
+    border-radius: 10px 10px 0 0;
+}
+
+main div.card:nth-child(3){
+    border-radius: 0 0 10px 10px;
+}
+
+@media screen and (min-width:768px) {
     main{
         display: flex;
+        height: 95%;
+        padding: 5% 10%;
     }
-} */
+
+    div.card{
+        height: 450px;
+    }
+    main div.card:nth-child(1){
+        border-radius: 10px 0 0 10px;
+    }
+    
+    main div.card:nth-child(3){
+        border-radius: 0 10px 10px 0;
+    }
+
+    button{
+        margin-top: 2rem;
+    }
+
+}
