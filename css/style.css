@@ -5,19 +5,22 @@
 }
 
 body{
-    height: 100vh;
-    font-size: 15px;
+    padding: 1rem;
+    font-size: 1rem;
     font-family: "Lexend Deca", sans-serif;
     background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
 }
 
 main{
-    padding: 50px 0;
+    max-width: 50rem;
 }
 
 div.card{
-    margin: 0 auto;
-    width: 90%;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -41,7 +44,7 @@ div.card{
     font-family: "Big Shoulders Display", sans-serif;
     font-size: 2.5rem;
     text-transform:uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.1rem;
     color: hsl(0, 0%, 95%);
 }
 
@@ -104,26 +107,21 @@ main div.card:nth-child(3){
     border-radius: 0 0 10px 10px;
 }
 
+footer{
+    margin-top: 3rem;
+}
 @media screen and (min-width:768px) {
     main{
         display: flex;
-        height: 95%;
-        padding: 5% 10%;
+        max-width: 60rem;
     }
 
-    div.card{
-        height: 450px;
-    }
     main div.card:nth-child(1){
         border-radius: 10px 0 0 10px;
     }
     
     main div.card:nth-child(3){
         border-radius: 0 10px 10px 0;
-    }
-
-    button{
-        margin-top: 2rem;
     }
 
 }
